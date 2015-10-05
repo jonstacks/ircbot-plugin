@@ -112,7 +112,7 @@ public class IRCConnection implements IMConnection, JoinListener, InviteListener
 		    sf = SocketFactory.getDefault();
 		}
 		config.setSocketFactory(sf);
-		
+		config.setSocketTimeout(new Integer(110));
 		
 	    config.setLogin(this.descriptor.getLogin());
 	    config.setName(this.descriptor.getNick());
